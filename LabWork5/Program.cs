@@ -2,11 +2,11 @@
 {
     static void Main() //string[] args
     {
-        File defaultFile = new File();
+        File defaultFile = new();
         Console.WriteLine("Информация о defaultFile:");
         defaultFile.DisplayInfo();
 
-        File parameterFile = new File("example.txt", "C:\\example\\example.txt", 1024);
+        File parameterFile = new("example.txt", "C:\\example\\example.txt", 1024);
         Console.WriteLine("Информация о parameterFile:");
         parameterFile.DisplayInfo();
 
